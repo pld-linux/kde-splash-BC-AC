@@ -1,27 +1,28 @@
 
-%define		_splash		ac-bc
+%define		_splash		BC-AC
 
 Summary:	KDE splash screen
 Summary(pl):	Ekran startowy KDE
-Name:		kde-splash-ac-bc
-Version:	1.0RC
-Release:	1
+Name:		kde-splash-%{_splash}
+Version:	1.0
+Release		0.1
 License:	GPL v2
 Group:		X11/Amusements
 Source0:	http://www.pld-look.wla.pl/pliki/BC-PLD_AC_Splash.tar.gz
 # Source0-md5:	8ede9bce105acfe8d863b367b01e2a0e
+Provides:	kde-splash
 Requires:	kdebase-desktop
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-"PLD AC" KDE splash screen.
+"BC-AC" KDE splash screen.
 
 %description -l pl
-Ekran startowy KDE "PLD"
+Ekran startowy KDE "BC-AC"
 
 %prep
-%setup  -q -n BCAC-PLD-Splash
+%setup -q -n BCAC-PLD-Splash
 
 %install
 rm -rf $RPM_BUILD_ROOT
