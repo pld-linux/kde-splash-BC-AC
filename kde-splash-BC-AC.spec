@@ -10,8 +10,8 @@ License:	GPL v2
 Group:		X11/Amusements
 Source0:	http://www.pld-look.wla.pl/pliki/BC-PLD_AC_Splash.tar.gz
 # Source0-md5:	8ede9bce105acfe8d863b367b01e2a0e
-Provides:	kde-splash
 Requires:	kdebase-desktop
+Provides:	kde-splash
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -19,7 +19,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 "BC-AC" KDE splash screen.
 
 %description -l pl
-Ekran startowy KDE "BC-AC"
+Ekran startowy KDE "BC-AC".
 
 %prep
 %setup -q -n BCAC-PLD-Splash
